@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                A Simple Calculator
+        </title>
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <body>
+        
+        <p class="name">Remz Simple Calculator</p>
+        <div class="calc-body">
+            <main>
+                <input type="text" 
+                placeholder="0" id="enter"/>
+            </main>
+            <section>
+                <button  onclick="display('0')">0</button>
+                <button  onclick="display('1')">1</button>
+                <button  onclick="display('2')">2</button>
+                <button  onclick="display('3')">3</button>
+                <button  onclick="display('4')">4</button>
+                <button  onclick="display('5')">5</button>
+                <button  onclick="display('6')">6</button>
+                <button  onclick="display('7')">7</button>
+                <button  onclick="display('8')">8</button>
+                <button  onclick="display('9')">9</button>
+                <button  onclick="display('+')"  data-action="add">+</button>
+                <button  onclick="display('-')" data-action="substract">-</button>
+                <button  onclick="display('.')" data-action="decimal">.</button>
+                <button  onclick="display('/')" data-action="divide">/</button>
+                <button  onclick="display('*')" data-action="multiply">*</button>
+                <button  data-action="calculate" onclick="solve()">=</button>
+                <button  data-action="clear" onclick="clearscreen()">AC</button>
+            </section>
+        </div>
+
+
+        <script src="index.js"></script>
+    </body>
+</html>
